@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #002655;
+            overflow-x: hidden;
+            background-image: url('img/Inicio.jpg');
+            background-size: cover;
+            background-repeat: repeat;
+            animation: zoomBackground 10s linear infinite;
+            min-height: 100vh;
+        }
+        @keyframes zoomBackground {
+            0% { background-size: 100%; }
+            50% { background-size: 110%; }
+            100% { background-size: 100%; }
+        }
+        .faq-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        .faq-container h1 {
+            color: white;
+            font-size: 3rem;
+            text-align: center;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        .faq-question {
+            cursor: pointer;
+            background-color: rgba(35, 0, 110, 0.8);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .faq-answers {
+            display: none;
+            margin: 10px;
+        }
+        .faq-answers ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .faq-answers li {
+            color: white;
+            padding: 8px;
+            border-radius: 3px;
+            margin-bottom: 5px;
+        }
+        .faq-answers li:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #01142b;
+            color: #fff;
+            width: 100%;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 0;
+        }
+        .logo-header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .logoH {
+            width: 50px;
+            margin-right: 10px;
+        }
+        .logo-text {
+            font-size: 2rem;
+            margin: 0;
+        }
+        .menu-header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+            gap: 20px;
+        }
+        .menu-item {
+            margin-left: 20px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+        .menu-item:hover {
+            color: #3498db;
+        }
+        .bg-custom-blue {background-color: #01142b;}
+        @media (max-width: 768px) {
+            .logo-header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .menu-header {
+                justify-content: center;
+                margin-top: 10px;
+            }
+            .menu-item {
+                margin: 5px 10px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-blue">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="logo-header">
+                    <img class="logoH" src="img/Signo-Blanco.png" alt="Logo de la empresa">
+                    <h1 class="logo-text">DAIO</h1>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Inicio.html#producto-section">Servicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Inicio.html#newsletter-section">Operá</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Inicio.html#acercaDe-section">Market</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="PreguntasFrecuentes.html">Preguntas Frecuentes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="faq-container">
+            <h1>Preguntas Frecuentes</h1>
+            <div class="faq-item">
+                <div class="faq-question">¿Qué es DAIO?</div>
+                <div class="faq-answers">
+                    <ul>
+                        <li>Es un servicio premium para clientes mayoristas, enfocado en proveer liquidez y ofrecer los precios más competitivos del mercado. Hacemos hincapié en la experiencia del cliente con nuestro servicio y en las facilidades a la hora de operar.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Cualquiera puede comerciar con DAIO?</div>
+                <div class="faq-answers">
+                    <ul>
+                        <li>Cualquier persona física o jurídica (empresa) de cualquier parte del mundo puede operar, siempre que cumpla con los requisitos, excepto en los casos en que la regulación específica de algunos estados no lo permita.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Puedo operar dólares con DAIO?</div>
+                <div class="faq-answers">
+                    <ul>
+                        <li>En DAIO se opera con pesos argentinos y dólares estadounidenses. Trabajamos con una amplia variedad de criptomonedas, entre las más comunes están BTC, ETH, USDC y USDT. No es necesario operar con todas las monedas.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Cómo comenzar a operar con DAIO?</div>
+                <div class="faq-answers">
+                    <ul>
+                        <li>Para comenzar a operar con nosotros, lo primero que debes hacer es conocer los requisitos necesarios y completar el formulario con tus datos. Un operador de nuestro equipo se contactará a la brevedad y brindará un servicio personalizado. Validaremos la información y, si cumple con los requisitos, ¡ya podrás operar!</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Tiene tamaños comerciales mínimos/máximos?</div>
+                <div class="faq-answers">
+                    <ul>
+                        <li>Sólo mínimos; $USD 5.000.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Qué ofrecés como proveedor de liquidez?</div>
+                <div class="faq-answers">
+                    <ul>
+                        <li>El contrato de liquidez conlleva la apertura de una cuenta de valores asociada a una cuenta de efectivo, y la puesta a disposición del proveedor de liquidez de efectivo y valores por un importe determinado. El proveedor de liquidez introduce en el mercado órdenes de compra y venta por un importe mínimo; de esta forma, se trata de garantizar que exista una mínima contrapartida a las órdenes de compra o venta que los actuales o potenciales inversores introduzcan sobre valores del mercado.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.faq-question').click(function() {
+                $(this).next('.faq-answers').slideToggle();
+            });
+        });
+    </script>
+</body>
+</html>
