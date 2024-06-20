@@ -1,17 +1,19 @@
-ÿþconst express = require('express');
+// src/index.js
+
+const express = require('express');
 const path = require('path');
 const app = express();
 const port = 3000;
 
-// Middleware para servir archivos estÃ¡ticos desde el directorio 'public'
-app.use(express.static('public'));
+// Servir archivos estÃ¡ticos desde la carpeta 'public'
+app.use(express.static(path.join(__dirname, '..', 'public')));
 
-// Ruta para servir inicio.html como pÃ¡gina principal (index.html)
+// Ruta para servir el archivo inicio.html
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/inicio.html'));
+  res.sendFile(path.join(__dirname, '..', 'public', 'inicio.html'));
 });
 
 // Iniciar el servidor
-app.listen(port, (=> {
+app.listen(port, () => {
   console.log(`Servidor escuchando en http://localhost:${port}`);
 });
