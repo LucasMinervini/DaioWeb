@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DAIO</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
@@ -20,6 +20,7 @@
       background-attachment: fixed; 
       background-repeat: no-repeat; 
       animation: parallax 10s linear infinite; 
+      width: 100%;
     }
      
 
@@ -698,8 +699,10 @@ input{ margin-left: 45%; width: 60%; }
 .requisitos{ margin-right: 57%; margin-left: 10%; }
 
 }
+
 /*Ajuste para móvil*/
 @media (max-width: 480px){
+  body{overflow-x: hidden; }
       header{ display: flex; flex-direction: column;align-items: center; height: 5%;}
       .logo{ width: 17%; margin-right: 2px;margin-left: 28%; }
       .menu{flex-direction: row;gap: 3px; margin: 1%; margin-left: 17%; }
@@ -750,7 +753,6 @@ input{ margin-left: 45%; width: 60%; }
       .mH{margin-left: 4%;}
       .firma{font-size: 0.5rem; margin-left:0%;padding-top: 5%;}
     }
-  
   </style>
 </head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
