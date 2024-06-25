@@ -492,37 +492,41 @@ footer{
     text-align: center;
     margin-top: 50px;
     opacity: 0;
-    transition: opacity 2s ease-in-out;
+    transition: opacity 2s ease-in-out;color: rgb(153, 233, 255);
+     margin-left: 25%; 
+     margin-right: 30%; 
+     margin-top: -0.5%;
 }
 
 .bounce-title.visible {
     opacity: 1;
 }   
 .precios-monedas{
-  color: blue; 
-  width: 80%;
   display: flex;
-  margin-top: 5%;
-  margin-left: -35%;
-  font-family: "Josefin Sans", sans-serif;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 96%; /* Deja un margen del 2% a cada lado */
+      max-width: 1200px;
 }  
-.crypto{
-  font-size: 40px;
-  padding-top: -15%;
-  margin: 5%;
-}
+.crypto {
+      flex: 1 1 calc(33.333% - 20px); /* Ajusta el ancho de cada elemento */
+      box-sizing: border-box;
+      margin: 10px;
+      padding: 20px;
+      background-color: rgb(0, 75, 186);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      text-align: center;
+      color: white;
+    }
 .crypto:hover{
   transform: scale(1.1);
   color: red;
 }
 .indicator {
-    display: inline-block;
-    width: 5%;
-    height: 5%;
-    margin-left: 5%;
-    border-radius: 50%;
-    background-color: white; 
-  }
+      display: inline-block;
+      margin-left: 10px;
+    }
 .indicator::after {
     
     display: inline-block;
@@ -604,7 +608,7 @@ footer{
     }
 
 /* Ajustes para laptops */
-@media screen and (max-width: 1366px) {
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
   header {
     height: 70px;
   }
@@ -627,22 +631,19 @@ footer{
     font-size: 24px;
   }
   .text-overlay2{font-size: 24px;}
-  .operaciones {
-    font-size: 24px;
-  }
-  .crypto {
-    font-size: 10px;
-    margin: 3%;
-  }
-  .bounce-title {
-    font-size: 1em;
-  }
-  .text0 {
-    font-size: 24px;
-  }
-  .precios-monedas {
-    margin-left: 0;
-  }
+  .operaciones {  font-size: 24px; margin-left: 40%;}
+  .crypto {  flex: 1 1 calc(25% - 20px);}
+  .bounce-title {  font-size: 1em;}
+  textarea{width: 97%;margin-left: -18%;}
+  input{width: 50%; margin-left: 27%;}
+  .text0 {  font-size: 24px;}
+  #crypto-prices {
+        max-width: 1400px; /* Aumenta el ancho máximo del contenedor */
+      }
+      .menu-header{margin-right: 4%;}
+      .background h1 {font-size: 5rem;}
+      .requisitos{width: 97%; margin-left: -18%;}
+      .texto7{top: 42%;left: 77%;}
 }
   /*Ajuste para Ipad*/
   @media (max-width: 767px) {
@@ -707,7 +708,7 @@ textarea{  margin-left: 5%;width: 33%;margin-top: 5%;}
 #topic { width: 80%; margin-left: 70%; }
 input{ margin-left: 45%; width: 60%; }
 .precios-monedas{ margin-top: 1%;}
-.crypto{ font-size: 20px; margin: 3%;}
+.crypto{ flex: 1 1 calc(50% - 20px);}
 .text-overlay2{font-size: 24px;}
 .requisitos {font-size: 12px; text-align: center; margin-top: 10px;}
 }
@@ -746,7 +747,7 @@ input{ margin-left: 45%; width: 60%; }
    label{ margin-left: -1%;}
       button[type="reset"]{ width: 100%;margin:0%;}
       button[type="submit"]{width: 100%;}
-      .crypto{ font-size: 10px; margin: 3%;}
+      .crypto{ flex: 1 1 100%;}
       .bounce-title{ font-size: 0.98em;}
       .text0{font-size: 19px;}
       .text1 {top: 56.5%; right: 49.5%;font-size: 10px;}
@@ -773,6 +774,7 @@ input{ margin-left: 45%; width: 60%; }
       .logos-productos{width: 78%;margin-left: 8%;}
       .fixed-top{width: auto;}
       .botones button{padding: 4px 14px;}
+      .botones {margin-right: 0%;}
     }
   </style>
 </head>
@@ -906,7 +908,7 @@ input{ margin-left: 45%; width: 60%; }
 </section>
 <section id="acercaDe-section">
 <div class="serCli">
-<h1 style="color: rgb(153, 233, 255);; margin-left: 25%; margin-right: 30%; margin-top: -0.5%;" class="bounce-title">Ser cliente de <span class="highlight">DAIO</span> significa acceso a una red internacional de liquidez cripto para operar con los más altos estándares de <span class="highlight">fluidez, velocidad y precio.</span></h1>
+<h1 class="bounce-title">Ser cliente de <span class="highlight">DAIO</span> significa acceso a una red internacional de liquidez cripto para operar con los más altos estándares de <span class="highlight">fluidez, velocidad y precio.</span></h1>
 </div>
 </div>
 
